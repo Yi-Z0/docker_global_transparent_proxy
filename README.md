@@ -23,3 +23,6 @@
 
 1. 只要规则设置的对, 支持国内直连,国外走代理
 1. 只在linux 测试过,win没试过, mac是不行, 第二步创建网络不行, docker自己的问题, 说不定以后哪天docker for mac支持了?
+
+## 构建方法
+docker buildx build --platform linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8 -t zhangyi2018/clash_transparent_proxy:1.0.6 -t zhangyi2018/clash_transparent_proxy:latest . --push
