@@ -12,7 +12,7 @@ COPY Makefile /clash-src/Makefile
 RUN make current
 
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 # RUN echo "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.11/main/" > /etc/apk/repositories
 
